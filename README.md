@@ -397,8 +397,8 @@ The average bill of ₦157,049 describes almost no one. Revenue sits in two depa
 ## 24. Author
 
 **Oyeniyi Okikiola**, Healthcare Data Analyst
-🔗 https://www.linkedin.com/in/okikiola-oyeniyi-
-💼 https://oyeniyiokikiola.github.io/
-📧 oyeniyiokikiola@gmail.com
+- 🔗 https://www.linkedin.com/in/okikiola-oyeniyi-
+- 💼 https://oyeniyiokikiola.github.io/
+- 📧 oyeniyiokikiola@gmail.com
 
 *Last updated: October 2026*
