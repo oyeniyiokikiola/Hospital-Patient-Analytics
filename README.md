@@ -1,6 +1,6 @@
-# Hospital Patient Analytics: Operations and Revenue Across Eight Nigerian Hospitals
+# Hospital Patient Analytics: Operations and Revenue Across 8 Nigerian Hospitals
 
-> How 1,000 patient visits across eight hospitals showed where revenue is concentrated, who pays for it, and which billing records needed a second look.
+> How 1,000 patient visits across 8 hospitals showed where revenue is concentrated, who pays for it, and which billing records needed a second look.
 
 ![Hospital Patient Analytics dashboard](visuals/dashboard_full.png)
 
@@ -396,8 +396,9 @@ The average bill of ₦157,049 describes almost no one. Revenue sits in two depa
 
 ## 24. Author
 
-**Oyeniyi Okikiola (Kiki)**, Healthcare Data Analyst
-- LinkedIn: linkedin.com/in/kikiblacc
-- Portfolio: oyeniyiokikiola.github.io
+**Oyeniyi Okikiola**, Healthcare Data Analyst
+🔗 https://www.linkedin.com/in/okikiola-oyeniyi-
+💼 https://oyeniyiokikiola.github.io/
+📧 oyeniyiokikiola@gmail.com
 
 *Last updated: October 2026*
