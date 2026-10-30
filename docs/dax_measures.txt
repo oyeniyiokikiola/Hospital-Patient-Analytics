@@ -1,0 +1,37 @@
+DAX used in the Hospital Patient Analytics dashboard
+Table name: hospital_patients_cleaned
+
+department_short (calculated column)
+department_short =
+SWITCH(
+    hospital_patients_cleaned[department],
+    "Obstetrics & Gynaecology", "OBGYN",
+    "Emergency Department", "Emerg.",
+    "General Outpatient (OPD)", "OPD",
+    "Internal Medicine", "Int. Med",
+    "Ophthalmology", "Ophth.",
+    "Orthopaedics", "Ortho",
+    "Paediatrics", "Paeds",
+    "Dermatology", "Derm",
+    "Cardiology", "Cardio",
+    hospital_patients_cleaned[department]
+)
+
+Measures
+Total Patients = COUNTROWS(hospital_patients_cleaned)
+Total Revenue = SUM(hospital_patients_cleaned[billing_amount])
+Avg Bill per Visit = DIVIDE([Total Revenue], [Total Patients])
+Admission Rate = AVERAGE(hospital_patients_cleaned[is_admitted])
+Insurance Coverage Rate = AVERAGE(hospital_patients_cleaned[is_covered])
+Revenue KPI = "₦" & FORMAT([Total Revenue] / 1000000, "0.0") & "M"
+Avg Bill KPI = "₦" & FORMAT([Avg Bill per Visit], "#,0")
+Visit Share =
+DIVIDE(
+    [Total Patients],
+    CALCULATE([Total Patients], ALLSELECTED(hospital_patients_cleaned[department_short]))
+)
+Revenue Share =
+DIVIDE(
+    [Total Revenue],
+    CALCULATE([Total Revenue], ALLSELECTED(hospital_patients_cleaned[department_short]))
+)
