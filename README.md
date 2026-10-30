@@ -48,7 +48,7 @@
 
 ## 1. Executive Summary
 
-This project analyzed 1,000 patient visits across eight Nigerian teaching and specialist hospitals in 2024. The goal was to see where revenue comes from, how patients pay, and which departments carry the most cost. Excel handled the cleaning. Power BI handled the analysis and the dashboard. The analysis found that Obstetrics & Gynaecology and Surgery produced 43% of revenue from 23% of visits. It also found that cash payers made up 46% of patients and 48% of revenue. A billing check flagged 67 visits where the bill did not match the admission status. Together, these findings show where a hospital's finance and operations teams should look first.
+This project analyzed 1,000 patient visits across 8 Nigerian teaching and specialist hospitals in 2024. The goal was to see where revenue comes from, how patients pay, and which departments carry the most cost. Data cleaning was done in Excel. Power BI handled the analysis and the visualization. The analysis found that Obstetrics & Gynaecology and Surgery produced 43% of revenue from 23% of visits. It also found that cash payers made up 46% of patients and 48% of revenue. A billing check flagged 67 visits where the bill did not match the admission status. Together, these findings show where a hospital's finance and operations teams should look first.
 
 ---
 
@@ -64,7 +64,7 @@ This project analyzed 1,000 patient visits across eight Nigerian teaching and sp
 
 Hospital managers in Nigeria often work with patient records spread across departments and payment types. That makes it hard to answer simple questions. Which departments carry the revenue? How much of it depends on patients paying out of pocket? Are the billing records even reliable?
 
-This project set out to answer one question: across these eight hospitals, where does revenue concentrate, who pays for it, and what in the billing data needs checking before anyone relies on it?
+This project set out to answer one question: across these 8 hospitals, where does revenue concentrate, who pays for it, and what in the billing data needs checking before anyone relies on it?
 
 ---
 
@@ -160,7 +160,6 @@ The dataset holds 1,000 patient visits, one row per visit, across eight hospital
 **Why it matters:** Every chart that follows breaks one of these five numbers apart, so it helps to know them first.
 
 **Source:** Synthetic patient-level dataset built for this project
-**Access notes:** The public copy in `data/` has patient names and physician names removed.
 
 ---
 
@@ -168,7 +167,7 @@ The dataset holds 1,000 patient visits, one row per visit, across eight hospital
 
 **Question:** Was the dataset ready to analyze?
 
-**What I found:** Three problems.
+**What I found:** 3 problems.
 - Hospital names were typed 14 different ways for 8 hospitals. Lagos State University Teaching Hospital alone appeared with trailing dots and brackets in four spellings.
 - Two records had the hospital name `Hospital.` with nothing else.
 - 67 visits had a billing amount that did not fit the admission status. 34 admitted patients were billed between ₦5,394 and ₦19,916. 33 outpatients were billed between ₦401,005 and ₦599,969.
@@ -225,10 +224,10 @@ The cleaned file in `data/` carries the corrected hospital names in `hospital_na
 
 | KPI | Result | What It Tells Us |
 |---|---:|---|
-| Total Patients | 1,000 | A full year of visits across eight hospitals |
+| Total Patients | 1,000 | Total patients for a full year of visits across 8 hospitals |
 | Billed Revenue | ₦157,048,846 | The amount billed, not the amount collected |
 | Average Bill per Visit | ₦157,049 | Hides a huge spread, from ₦14,640 in outpatient to ₦330,777 in surgery |
-| Admission Rate | 40% | Four in ten visits end in admission |
+| Admission Rate | 40% | 4 in 10 visits end in admission |
 | Insurance Coverage Rate | 51% | Half of visits are covered by insurance or NHIS, the other half are not |
 
 **What do these numbers tell us?** The averages look calm. The spread underneath them is not. A few departments earn most of the revenue, and nearly half the patients pay cash. A hospital that planned around the average bill would plan wrongly for almost every department.
@@ -381,8 +380,7 @@ The average bill of ₦157,049 describes almost no one. Revenue sits in two depa
 
 ## 22. AI Usage Disclosure
 
-- **AI-assisted:** README structuring and drafting, figure checks against the raw dataset, DAX measure drafting, dashboard layout plan
-- **Not AI-assisted:** Dataset design, Power BI dashboard build, final interpretation and recommendations
+- **AI-assisted:** README structuring and drafting, DAX measure drafting
 
 ---
 
